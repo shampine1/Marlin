@@ -3,6 +3,7 @@
  * Requires the Teensyduino software with Teensy++ 2.0 selected in Arduino IDE!
  * http://www.pjrc.com/teensy/teensyduino.html
  * See http://reprap.org/wiki/Printrboard for more info
+ * If you are using an I2C SD card reader, you must move your Y endstop to the ESTOP socket
  */
 
 #ifndef __AVR_AT90USB1286__
@@ -47,7 +48,11 @@
 #endif
 
 #define X_STOP_PIN         35
-#define Y_STOP_PIN          8
+#ifdef SDSUPPORT
+   #define Y_STOP_PIN       37   // {must be 37 and us estop socket for ystop for SD card support}
+#else 
+  #define Y_STOP_PIN         8   // {Printrboard w/o I2C SD}
+#endif
 #define Z_STOP_PIN         36
 #define TEMP_0_PIN          1  // Extruder / Analog pin numbering
 #define TEMP_BED_PIN        0  // Bed / Analog pin numbering
