@@ -4,7 +4,7 @@
  Documentation has moved to [marlinfirmware.org](http://www.marlinfirmware.org).
 
 ## Development Branch
-
+Configured to work with a Cobblebot running RAMPS/MEGA
 __Not for production use – use with caution!__
 
 The Development branch contains the most up-to-date Marlin code. When reporting any issues, please check to see if they are resolved in this branch first. But let us know if issues exist in tagged releases so that we can document and patch them.
