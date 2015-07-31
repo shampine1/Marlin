@@ -1,6 +1,8 @@
 # Marlin 3D Printer Firmware
 <img align="right" src="Documentation/Logo/Marlin%20Logo%20GitHub.png" />
 
+Configured for Cobblebot!
+
  Documentation has moved to [marlinfirmware.org](http://www.marlinfirmware.org).
 
 ## Development Branch
